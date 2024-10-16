@@ -1,0 +1,178 @@
+/* Style pour organiser les groupes de deux éléments sur la même ligne */
+.form-group {
+    display: flex;
+    gap: 20px; /* Espacement entre les éléments */
+    margin-bottom: 20px; /* Espacement entre les groupes */
+}
+.btn-valider {
+    background-color: #062c55; /* Bleu principal */
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.modal-content {
+    border-radius: 6px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-title {
+    margin: 0;
+    font-size: 20px;
+}
+
+.modal-header .close {
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    color: #000;
+}
+
+.modal-body {
+    padding: 20px;
+    position: relative;
+}
+
+.modal-body::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #ddd;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.container-1 {
+    background-color: #dedcdc; /* Gris plus foncé pour le cadre */
+    padding: 20px; /* Augmente l'espace intérieur pour le cadre */
+    border-image-slice: 1; /* Appliquer le dégradé sur toute la bordure */
+}
+.my-custom-group {
+    padding: 0 120px; /* Ajoute un padding pour espacer les bouton*/
+    display: flex;
+    justify-content: space-between; /* Espace entre les boutons à gauche et à droite */
+    align-items: flex-start; /* Aligne les éléments en haut */
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start; /* Centre le bouton d'ajout à gauche */
+    gap: 20px; /* Espace entre les boutons */
+}
+
+.right-buttons {
+    justify-content: flex-end; /* Aligne les boutons à droite */
+    gap: 30px; /* Espace entre les boutons à droite */
+}
+
+.my-custom-group .level-1, .my-custom-group .level-2 {
+    display: flex;
+    flex-direction: column; /* Aligne le contenu verticalement */
+    justify-content: center; /* Centre verticalement le contenu */
+    align-items: center; /* Centre horizontalement le contenu */
+    width: 120px;
+    height: 170px;
+    border-radius: 8px;
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.3);
+    border: none; /* Enlève la bordure par défaut des boutons */
+    color: white; /* Couleur du texte par défaut */
+    cursor: pointer; /* Curseur pointer pour les boutons */
+}
+
+.my-custom-group .level-1 {
+    background-color: #003366; /* Couleur spécifique pour level-1 */
+}
+
+.my-custom-group .level-1:hover {
+    background-color: #025cb5; /* Couleur spécifique pour level-1 */
+    width: 122px;
+    height: 170px;
+}
+
+.my-custom-group .level-2 {
+    background-color: #545454; /* Couleur spécifique pour level-2 */
+}
+
+.my-custom-group .haut-1, .my-custom-group .haut-2 {
+    text-align: center; /* Centre le texte */
+    margin: 0; /* Enlève les marges par défaut */
+}
+
+.my-custom-group .strong-1, .my-custom-group .strong-2 {
+    font-weight: bold;
+    font-size: 50px; /* Taille du texte pour les chiffres */
+    padding: 0; /* Retire le padding pour centrer verticalement */
+    margin: 0; /* Enlève les marges pour un meilleur centrage */
+}
+
+/* Styles supplémentaires pour augmenter la taille et le gras des mots spécifiques */
+.my-custom-group .haut-2 {
+    font-weight: bold; /* Mettre le texte en gras */
+}
+
+.my-custom-group .haut-1 {
+    font-size: 16px; /* Augmente la taille de texte pour "Véhicule" */
+}
+
+.my-custom-group .haut-2 {
+    font-size: 22px; /* Augmente la taille de texte pour les mots "Essence", "Gasoil", etc. */
+}
+.dont-text {
+    font-weight: bold; /* Met le texte en gras */
+    font-size: 20px; /* Ajuste la taille de police */
+    align-self: center; /* Centre verticalement dans le conteneur */
+    margin: 0 10px; /* Espace autour du texte */
+}
+
+/* Ajuster le bouton de retour pour le rendre moins large */
+.go-home-btn {
+    background-color:#003366; /* Fond orange par défaut */
+    width: 50px;
+    height:35px;
+    border: none; /* Pas de bordure */
+    padding: 5px 10px; /* Réduit le padding pour rendre le bouton plus compact */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de pointeur */
+    display: inline-flex; /* Alignement de l'icône */
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease; /* Transition fluide pour les couleurs */
+}
+
+.go-home-btn i {
+    color: #ffff; /* Flèche bleue */
+    font-size: 20px; /* Taille de l'icône */
+}
+
+.go-home-btn:hover {
+    background-color: #337ab7; /* Fond bleu au survol */
+}
+
+.go-home-btn:hover i {
+    color: #ffffff; /* Flèche orange au survol */
+}
+
+/* Style du texte de gestion des véhicules */
+
+.gest_veh {
+    font-size: 36px;
+    margin: -9px 0px 0px 0px;
+    font-weight: bold;
+    color: #003366;
+    left: 20%; /* Décale le texte vers le centre */
+}
+.ligne-separation {
+    height: 2px; /* Hauteur de la ligne */
+    background-color: #337ab7; /* Couleur bleu sombre */
+    margin-bottom: 0px; /* Espacement entre la ligne et le conteneur */
+}

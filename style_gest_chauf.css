@@ -1,0 +1,248 @@
+/* Styles pour la navbar */
+.navbar {
+    background: linear-gradient(to right, #211f20, #003366);
+    padding: 1px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 0px; /* Espace sous la navbar */
+    display: flex;
+    justify-content: space-between; /* Espace entre les éléments de gauche et de droite */
+    align-items: center; /* Centrer les éléments verticalement */
+    border-radius: 0px; /* Coins arrondis */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Centrer le logo et le texte verticalement */
+    color: #ffffff;
+}
+
+.logo {
+    width: 74px; /* Ajuster la taille du logo */
+    height: 50px;
+    margin-right: 10px; /* Espace entre le logo et le texte */
+}
+
+.deconnexion-container {
+    margin-left: auto; /* Pousse le bouton de déconnexion à droite */
+}
+
+.deconnexion {
+    font-size: 14px;
+}
+
+.deconnexion:hover {
+    font-size: 15px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Centrer les éléments verticalement */
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-align: center;
+    padding: 0px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.form-container {
+    background-color: #e8e8e8; /* Fond blanc pour un look propre */
+    border-radius: 6px; /* Coins arrondis plus marqués */
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.1); /* Ombre plus prononcée pour un effet de profondeur */
+    margin-top: 40px;
+    overflow: hidden; /* Évite le débordement du contenu */
+}
+
+/* Style pour les éléments de formulaire */
+form {
+    display: flex;
+    flex-direction: column; /* Alignement vertical des éléments */
+}
+
+/* Style pour les champs de texte et les sélecteurs */
+input[type="text"], select, input[type="date"], input[type="email"], input[type="password"], input[type="number"]{
+    width: 100%; /* Largeur par défaut */
+    padding: 8px;
+    margin-bottom: 1px; /* Espacement entre les champs */
+    border: 1px solid #ddd; /* Bordure légère */
+    border-radius: 6px; /* Coins arrondis */
+    box-sizing: border-box; /* Inclut padding et bordure dans la largeur */
+}
+
+/* Style pour organiser les groupes de deux éléments sur la même ligne */
+.form-group {
+    display: flex;
+    gap: 20px; /* Espacement entre les éléments */
+    margin-bottom: 20px; /* Espacement entre les groupes */
+}
+.btn-valider {
+    background-color: #062c55; /* Bleu principal */
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.modal-content {
+    border-radius: 6px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-title {
+    margin: 0;
+    font-size: 20px;
+}
+
+.modal-header .close {
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    color: #000;
+}
+
+.modal-body {
+    padding: 20px;
+    position: relative;
+}
+
+.modal-body::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #ddd;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.container-1 {
+    background-color: #dedcdc; /* Gris plus foncé pour le cadre */
+    padding: 15px; /* Augmente l'espace intérieur pour le cadre */
+    border-radius: 5px 5px 0px 0px; /* Arrondir légèrement les coins */
+    border-image-slice: 1; /* Appliquer le dégradé sur toute la bordure */
+}
+.my-custom-group {
+    padding: 0 120px; /* Ajoute un padding pour espacer les bouton*/
+    display: flex;
+    justify-content: space-between; /* Espace entre les boutons à gauche et à droite */
+    align-items: flex-start; /* Aligne les éléments en haut */
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start; /* Centre le bouton d'ajout à gauche */
+    gap: 20px; /* Espace entre les boutons */
+}
+
+.right-buttons {
+    justify-content: flex-end; /* Aligne les boutons à droite */
+    gap: 30px; /* Espace entre les boutons à droite */
+}
+
+.my-custom-group .level-1, .my-custom-group .level-2 {
+    display: flex;
+    flex-direction: column; /* Aligne le contenu verticalement */
+    justify-content: center; /* Centre verticalement le contenu */
+    align-items: center; /* Centre horizontalement le contenu */
+    width: 120px;
+    height: 170px;
+    border-radius: 8px;
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.3);
+    border: none; /* Enlève la bordure par défaut des boutons */
+    color: white; /* Couleur du texte par défaut */
+    cursor: pointer; /* Curseur pointer pour les boutons */
+}
+
+.my-custom-group .level-1 {
+    background-color: #003366; /* Couleur spécifique pour level-1 */
+}
+
+.my-custom-group .level-2 {
+    background-color: #545454; /* Couleur spécifique pour level-2 */
+}
+
+.my-custom-group .haut-1, .my-custom-group .haut-2 {
+    text-align: center; /* Centre le texte */
+    margin: 0; /* Enlève les marges par défaut */
+}
+
+.my-custom-group .strong-1, .my-custom-group .strong-2 {
+    font-weight: bold;
+    font-size: 50px; /* Taille du texte pour les chiffres */
+    padding: 0; /* Retire le padding pour centrer verticalement */
+    margin: 0; /* Enlève les marges pour un meilleur centrage */
+}
+
+/* Styles supplémentaires pour augmenter la taille et le gras des mots spécifiques */
+.my-custom-group .haut-2 {
+    font-weight: bold; /* Mettre le texte en gras */
+}
+
+.my-custom-group .haut-1 {
+    font-size: 16px; /* Augmente la taille de texte pour "Véhicule" */
+}
+
+.my-custom-group .haut-2 {
+    font-size: 22px; /* Augmente la taille de texte pour les mots "Essence", "Gasoil", etc. */
+}
+.dont-text {
+    font-weight: bold; /* Met le texte en gras */
+    font-size: 20px; /* Ajuste la taille de police */
+    align-self: center; /* Centre verticalement dans le conteneur */
+    margin: 0 10px; /* Espace autour du texte */
+}
+
+/* Ajuster le bouton de retour pour le rendre moins large */
+.go-home-btn {
+    background-color:#003366; /* Fond orange par défaut */
+    width: 50px;
+    height:35px;
+    border: none; /* Pas de bordure */
+    padding: 5px 10px; /* Réduit le padding pour rendre le bouton plus compact */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de pointeur */
+    display: inline-flex; /* Alignement de l'icône */
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease; /* Transition fluide pour les couleurs */
+}
+
+.go-home-btn i {
+    color: #ffff; /* Flèche bleue */
+    font-size: 20px; /* Taille de l'icône */
+}
+
+.go-home-btn:hover {
+    background-color: #337ab7; /* Fond bleu au survol */
+}
+
+.go-home-btn:hover i {
+    color: #ffffff; /* Flèche orange au survol */
+}
+
+/* Style du texte de gestion des véhicules */
+
+.gest_veh {
+    font-size: 36px;
+    margin: -9px 0px 0px 0px;
+    font-weight: bold;
+    color: #003366;
+    left: 20%; /* Décale le texte vers le centre */
+}

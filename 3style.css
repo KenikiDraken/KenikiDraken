@@ -1,0 +1,116 @@
+
+.container-1 {
+    background-color: #dedcdc; /* Gris plus foncé pour le cadre */
+    padding: 20px; /* Augmente l'espace intérieur pour le cadre */
+    border-image-slice: 1; /* Appliquer le dégradé sur toute la bordure */
+}
+/* Style pour organiser les groupes de deux éléments sur la même ligne */
+.form-group {
+    display: flex;
+    gap: 20px; /* Espacement entre les éléments */
+    margin-bottom: 20px; /* Espacement entre les groupes */
+}
+/* Ajuster le bouton de retour pour le rendre moins large */
+.go-home-btn {
+    background-color:#003366; /* Fond orange par défaut */
+    width: 50px;
+    height:35px;
+    border: none; /* Pas de bordure */
+    padding: 5px 10px; /* Réduit le padding pour rendre le bouton plus compact */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de pointeur */
+    display: inline-flex; /* Alignement de l'icône */
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease; /* Transition fluide pour les couleurs */
+}
+.go-home-btn i {
+    color: #ffff; /* Flèche bleue */
+    font-size: 20px; /* Taille de l'icône */
+}
+.go-home-btn:hover {
+    background-color: #337ab7; /* Fond bleu au survol */
+}
+.go-home-btn:hover i {
+    color: #ffffff; /* Flèche orange au survol */
+}
+/* Style du texte de gestion des véhicules */
+.gest_veh {
+    font-size: 36px;
+    margin: -9px 0px 0px 0px;
+    font-weight: bold;
+    color: #003366;
+    left: 20%; /* Décale le texte vers le centre */
+}
+/* Styles pour le bouton "Nouveau administrateur" */
+.btn-responsables {
+    width: 180px; /* Largeur spécifique pour ce bouton */
+    height: 100px; /* Hauteur spécifique pour ce bouton */
+    background-color: rgb(255, 255, 255); /* Couleur de fond blanche */
+    color: #003366; /* Bleu sombre pour le texte */
+    border-radius: 8px; /* Coins arrondis */
+    display: flex;
+    margin-left: 80px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.331); /* Ombre portée */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition pour l'effet hover */
+}
+/* Styles pour le bouton "Nouveau administrateur" */
+
+.btn-respon {
+    width: 180px; /* Largeur spécifique pour ce bouton */
+    height: 100px; /* Hauteur spécifique pour ce bouton */
+    background-color: #003366;
+    color: #ffff; /* Bleu sombre pour le texte */
+    border-radius: 8px; /* Coins arrondis */
+    display: flex;
+    margin-left: 80px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.331); /* Ombre portée */
+}
+
+/* Icônes du bouton "Nouveau administrateur" */
+.btn-responsables i {
+    margin-top:8px;  
+    font-size: 44px; /* Taille de l'icône */
+    color: #003366; /* Bleu sombre pour l'icône */
+    margin-bottom: 5px;
+}
+.btn-respon i {
+    margin-top:8px; 
+    font-size: 44px; /* Taille de l'icône */
+    color: #ffff; /* pour l'icône */
+    margin-bottom: 5px;
+}
+
+/* Effet hover pour tout le bouton (icône + texte) */
+.btn-responsables:hover {
+    background-color: #003366; /* Violet foncé */
+    color: white; /* Texte et icône blancs */
+}
+
+.btn-responsables:hover i, 
+.btn-responsables:hover span {
+    color: white; /* Couleur blanche appliquée à la fois à l'icône et au texte */
+}
+
+/* Texte du bouton "Nouveau administrateur" */
+.btn-responsables span {
+    font-weight: bold;
+    font-size: 14px; /* Taille du texte */
+}
+.btn-respon span {
+    margin-top:-10px;
+    color:#ffff;
+    font-weight: bold;
+    font-size: 14px; /* Taille du texte */
+}
+.ligne-separation {
+    height: 2px; /* Hauteur de la ligne */
+    background-color: #337ab7; /* Couleur bleu sombre */
+    margin-bottom: 0px; /* Espacement entre la ligne et le conteneur */
+}
